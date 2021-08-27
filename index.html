@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Country - All arround the world</title>
+        <style>
+            #section {
+                display: flex;
+            }
+
+            .left-site {
+                width: 250px;
+                height: 100vh;
+                overflow-y: scroll;
+            }
+
+            .country {
+                margin: auto;
+                padding: 10px 20px;
+                background: #f9f9f9;
+                border-bottom: 1px solid gray;
+                cursor: pointer;
+            }
+
+            .right-site {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+
+            img {
+                border: 1px solid gray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="section">
+            <div class="left-site">
+                <div id="options"></div>
+            </div>
+            <div class="right-site" id="country-info"></div>
+        </div>
+        <script src="api.js"></script>
+    </body>
+
+</html>
